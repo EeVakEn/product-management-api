@@ -4,8 +4,9 @@ This is a Laravel application.
 
 ## How to Start This Application
 
-1. Build the Docker containers:
+1. Copy the example environment file and Build the Docker containers:
 ```
+cp .env.example .env
 make build
 ```
 
@@ -20,9 +21,8 @@ make php
 composer install
 ```
 
-4. Copy the example environment file and generate the application key:
+4. Generate the application key:
 ```
-cp .env.example .env
 php artisan key:generate
 ```
 
@@ -31,9 +31,7 @@ php artisan key:generate
 php artisan migrate
 ```
 
-6. Access the application at [http://localhost](http://localhost).
-
-7. Seed products
+6. Seed products (Optional)
 ```
 php artisan db:seed
 ```
