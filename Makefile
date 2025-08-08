@@ -17,13 +17,13 @@ restart:
 	docker-compose restart
 
 php:
-	docker-compose exec app sh
+	docker-compose exec app /bin/bash
 
 db:
-	docker-compose exec db sh
+	docker-compose exec db /bin/bash
 
 nginx:
-	docker-compose exec nginx sh
+	docker-compose exec nginx /bin/bash
 
 help:
 	@echo "make build     # Build the Docker containers"
