@@ -16,7 +16,7 @@ class UpdateRequest extends FormRequest
         return [
             'name' => 'sometimes|required|string|max:255',
             'price' => 'sometimes|required|numeric|min:0',
-            'category' => 'sometimes|string|regex:/^[a-z0-9]+(?:-[a-z0-9]+)*$/|max:255',
+            'category' => 'sometimes|required|string|regex:/^[a-z0-9]+(?:-[a-z0-9]+)*$/|max:255',
             'in_stock' => 'sometimes|required|boolean',
         ];
     }
